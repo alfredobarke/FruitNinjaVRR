@@ -3,7 +3,7 @@ using TMPro;
 
 public class ScoreManager : MonoBehaviour
 {
-    public TextMeshProUGUI scoreText; // Referencia al componente Text Mesh Pro en el canvas
+    public TextMeshProUGUI scoreText; 
     private int score;
 
     void Start()

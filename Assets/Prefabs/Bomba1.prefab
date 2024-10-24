@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 2860326208112685356}
   - component: {fileID: 871483126504476650}
   - component: {fileID: -7937124147365562123}
-  - component: {fileID: 5473688881570759835}
+  - component: {fileID: -5794278254267039854}
   m_Layer: 0
   m_Name: Bomba1
   m_TagString: Bomba
@@ -101,7 +101,7 @@ SphereCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -134,7 +134,7 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &5473688881570759835
+--- !u!114 &-5794278254267039854
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

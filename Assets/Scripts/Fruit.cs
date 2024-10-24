@@ -6,7 +6,6 @@ public class Fruit : MonoBehaviour
 
     void Start()
     {
-        // Buscar el ScoreManager automáticamente al iniciar
         scoreManager = FindObjectOfType<ScoreManager>();
     }
 
@@ -14,13 +13,11 @@ public class Fruit : MonoBehaviour
     {
         if (other.CompareTag("Sword"))
         {
-            // Añadir un punto al puntaje
             if (scoreManager != null)
             {
                 scoreManager.AddPoint();
             }
 
-            // Destruir la fruta cortada
             Destroy(gameObject);
         }
     }
