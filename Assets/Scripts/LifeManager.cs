@@ -1,14 +1,19 @@
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
+using UnityEngine.SceneManagement;
 
 public class LifeManager : MonoBehaviour
 {
     public Image[] lifeIcons; 
     private int currentLives;
 
+    public TextMeshProUGUI gameOverText; 
+
     void Start()
     {
-        currentLives = lifeIcons.Length; 
+        currentLives = lifeIcons.Length;
+        gameOverText.gameObject.SetActive(false); 
     }
 
     public void LoseLife()
@@ -27,7 +32,16 @@ public class LifeManager : MonoBehaviour
 
     void GameOver()
     {
-        Debug.Log("Game Over!"); 
         
+        gameOverText.gameObject.SetActive(true);
+
+       
+        Invoke("RestartGame", 5.0f); 
+    }
+
+    void RestartGame()
+    {
+        
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 }

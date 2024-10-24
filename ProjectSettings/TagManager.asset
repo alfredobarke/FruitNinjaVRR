@@ -9,6 +9,7 @@ TagManager:
   - Bomba
   - Sword
   - LoseZone
+  - Cannon
   layers:
   - Default
   - TransparentFX
